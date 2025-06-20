@@ -1,13 +1,15 @@
 {
   "name": "cli-rpn-calculator",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A CLI-based calculator that evaluates expressions using Reverse Polish Notation",
+  "main": "dist/core/cli/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node src/core/cli/index.ts",
+    "build": "tsc",
+    "test": "jest"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["rpn", "calculator", "cli"],
+  "author": "Andrew Lo",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
