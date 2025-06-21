@@ -23,7 +23,7 @@ const handleCalculation = (inputs: string[], stack: Stack) => {
   return newStack;
 };
 
-const startCli = () => {
+export const startCli = () => {
   console.log('Reverse Polish Notation Calculator');
   console.log('Enter your expression or press q to quit.');
 
@@ -56,4 +56,6 @@ const startCli = () => {
   });
 };
 
-startCli();
+if (require.main === module) {
+  startCli();
+}
