@@ -3,7 +3,7 @@ import { evaluateExpression } from '../../src/core/calculator';
 import { startCli } from '../../src/core/cli';
 
 jest.mock('readline');
-jest.mock('../../../src/core/calculator');
+jest.mock('../../src/core/calculator');
 
 const mockedCreateInterface = createInterface as jest.Mock;
 const mockedEvaluateExpression = evaluateExpression as jest.Mock;

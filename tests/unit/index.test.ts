@@ -1,7 +1,7 @@
 import { evaluateExpression } from '../../src/core/calculator/index';
 import { getOperator } from '../../src/core/calculator/operator-registry';
 
-jest.mock('../../../src/core/calculator/operator-registry');
+jest.mock('../../src/core/calculator/operator-registry');
 
 const mockedGetOperator = getOperator as jest.Mock;
 

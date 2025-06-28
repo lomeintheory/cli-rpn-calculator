@@ -1,7 +1,7 @@
-import { getOperator } from '../../src/core/calculator/operator-registry';
 import binaryOperations from '../../src/core/calculator/binary-operations';
+import { getOperator } from '../../src/core/calculator/operator-registry';
 
-jest.mock('../../../src/core/calculator/binary-operations', () => ({
+jest.mock('../../src/core/calculator/binary-operations', () => ({
   add: jest.fn(),
   subtract: jest.fn(),
   multiply: jest.fn(),
